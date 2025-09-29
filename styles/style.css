@@ -9,3 +9,19 @@
     font-weight: bold;
     transition: background 0.3s;
 }
+.box 
+{
+    width: 150px;
+    height: 80px;
+    background: lightgreen;
+    margin: 10px;
+    border: 2px solid green;
+
+    position: relative;
+    top: 20;
+    left: 30;
+}
+.row { display: flex; gap: 12px; height: 70px; position:relative;
+}
+    .box { width: 80px; height: 80xp; background:#e2e8f0; border:2px solid #94a3b8; }
+    .abc { position:absolute; top:0; }
