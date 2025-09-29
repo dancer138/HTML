@@ -1,0 +1,11 @@
+.menu a {
+    display: inline-block;
+    background: #2563eb;
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 8px;
+    border-radius: 6px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
