@@ -1,0 +1,23 @@
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background: lightblue;
+    padding: 10px;
+  }
+  
+  .menu a {
+    background: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+  }
+      .cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            padding: 16px;
+            background: #fafafa;
+        }
+
+    
