@@ -55,5 +55,19 @@
     </section>
 
     <div class="loader"></div>
+    <form action="/search" method="GET">
+        <label for="q">Поиск:</label>
+        <input id="q" name="q" type="text" placeholder="Что ищем?" />
+        <button type="submit">Найти</button>
+        <p><label for="email">Email</label> 
+        <input id="tmail" name="email" type="email" required autocomplete="email" placeholder="Введите email"> </p>
+        <p><label for="city">Город</label> 
+            <seleсt id="city" name="city">
+                <option value="msk">Москва</option>
+                <option value="spb">Санкт-Питербург</option>
+                <option value="mnsk">Минск</option>
+            </seleсt></p>
+            <button type="submit">Найти</button>
+    </form>
 </body>
 </html>

@@ -104,9 +104,11 @@
       }
 
       .loader {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        border-radius: 40px;
         animation: spin 2s linear infinite;
-
-    
       }
 @keyframes blink {
     0% { opaciti: 1; }
@@ -116,4 +118,40 @@
 
 .text {
     animation: blink 1s intfinite;
+}
+.card {
+    width: 260px;
+    padding: 16px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    transition: transform .2s, box-shadow .2s;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.12);
+  }
+  .grad {
+    min-height: 160px;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    font-weight: 700;
+    background: linear-gradient(45deg, #385cf6, #060664, #22c55e);
+    background-size: 300% 300%;
+    animation: shift 8s ease infinite;
+    border-radius: 16px;
+}
+
+@keyframes shift {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
