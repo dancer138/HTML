@@ -1,3 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 20px;
+}
+
 .menu {
     display: flex;
     flex-direction: row;
@@ -12,25 +24,13 @@
     border-radius: 6px;
     text-decoration: none;
   }
-      .cards {
+ .cards {
             display: flex;
             flex-wrap: wrap;
             gap: 16px;
             padding: 16px;
             background: #fafafa;
         }
-
-        * {
-          margin: 0;
-          padding: 0;
-          box-sizing: border-box;
-          font-family: Arial, sans-serif;
-      }
-      
-      body {
-          background-color: #f5f5f5;
-          padding: 20px;
-      }
       
       .container {
           max-width: 1200px;
@@ -203,22 +203,7 @@
         .auth_btn:hover {
             background: #1e40af;
         }
-    </style>
-</head>
-<body>
-    <div class="authfront">
-        <h2 class="auth_title">Авторизация</h2>
-        <form>
-            <label class="auth_label" for="login">Логин:</label>
-            <input class="auth_input" type="text" id="login" name="login">
-            
-            <label class="auth_label" for="password">Пароль:</label>
-            <input class="auth_input" type="password" id="password" name="password">
-            
-            <button class="auth_btn" type="submit">Войти</button>
-        </form>
-    </div>
-         { margin: 0; padding: 0; box-sizing: border-box; }
+    
         body { 
             font-family: Arial; 
             padding-top: 60px; 
@@ -313,6 +298,15 @@
             font-size: 20px;
             color: #8b8b8b;
         }
-        
-</body>
-</html>
+
+        .section__title {
+            text-align: center
+        }
+
+        .form__search{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        max-width: 600px;
+        margin: 0 auto;
+        }

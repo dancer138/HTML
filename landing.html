@@ -45,14 +45,14 @@
             </div>
         </div>
     </div>
-<h2>------------------------------------------------------------Лучшие адвокаты------------------------------------------------------------</h2>
+    <h2 class="section__title">Лучшие адвокаты</h2>
     <div class="cards">
         <div class="card">
             <div class="badge">NEW</div>
             <div class="card-img"></div>
             <h3>Адвокат 1</h3>
             <p>Описание адвоката</p>
-            <div class="price">1000 ₽</div>
+            <div class="price">1000 $</div>
             <button class="btn">Купить услугу</button>
         </div>
         <div class="card">
@@ -60,7 +60,7 @@
             <div class="card-img"></div>
             <h3>Адвокат 2</h3>
             <p>Описание адвоката</p>
-            <div class="price">2000 ₽</div>
+            <div class="price">2000 $</div>
             <button class="btn">Купить услугу</button>
         </div>
         <div class="card">
@@ -68,7 +68,7 @@
             <div class="card-img"></div>
             <h3>Адвокат 3</h3>
             <p>Описание адвоката</p>
-            <div class="price">1500 ₽</div>
+            <div class="price">1500 $</div>
             <button class="btn">Купить услугу</button>
         </div>
         <div class="card">
@@ -76,7 +76,7 @@
             <div class="card-img"></div>
             <h3>Адвокат 4</h3>
             <p>Описание адвоката</p>
-            <div class="price">3000 ₽</div>
+            <div class="price">3000 $</div>
             <button class="btn">Купить услугу</button>
         </div>
     </div>
@@ -87,41 +87,72 @@
 
     <button class="to-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
 
-    <script>
-        window.addEventListener('scroll', function() {
-            const btn = document.querySelector('.to-top');
-            btn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
-        });
-        document.querySelector('.to-top').style.display = 'none';
-    </script>
-</body>
-</html>
-<footer> <div class="loader"></div>
-    <form action="/search" method="GET">
-        <label for="q">Поиск:</label>
-        <input id="q" name="q" type="text" placeholder="Что ищем?" />
-        <button type="submit">Найти</button>
-        <p><label for="email">Email</label> 
-        <input id="tmail" name="email" type="email" required autocomplete="email" placeholder="Введите email"> </p>
-        <p><label for="city">Город</label> 
-            <seleсt id="city" name="city">
-                <option value="msk">Москва</option>
-                <option value="spb">Санкт-Питербург</option>
-                <option value="mnsk">Минск</option>
-            </seleсt></p>
-            <button type="submit">Найти</button>
-    </form>
-    <form class="auth" action="/signup" method="post">
-        <h3 class="auth_title">Регистрация</h3>
-
-        <label class="auth____label">Имя
-        <input class="auth_input" name="name" type="text" placeholder="Baшe имя"  required autocomplete="name">
- </label>
-        <input class="auth_input" name="email" type="email" required autocomplete="Ваша почта" placeholder="email">
-</label>
-        <input class="auth_input" name="password" type="password"  required autocomplete="password" placeholder="************">
-</label>
-    </footer>
+    <div class="loader"></div>
+        <form action="/search" method="GET" class="form__search">
+            <label for="q">Поиск:</label>
+            <input id="q" name="q" type="text" placeholder="Что ищем?" />
+            
+           <label for="email">Email</label> 
+            <input id="tmail" name="email" type="email" required autocomplete="email" placeholder="Введите email"> 
+            <label for="city">Город</label> 
+                <select id="city" name="city">
+                    <option value="msk">Москва</option>
+                    <option value="spb">Санкт-Питербург</option>
+                    <option value="minsk">Минск</option>
+                </select>
+            
+                <button type="submit">Найти</button>
         </form>
-</body>
+        <form class="auth" action="/signup" method="post">
+            <h3 class="auth_title">Регистрация</h3>
+
+            <label class="auth____label">Имя
+            <input class="auth_input" name="name" type="text" placeholder="Baшe имя"  required autocomplete="name">
+            </label>
+                    <input class="auth_input" name="email" type="email" required autocomplete="Ваша почта" placeholder="email">
+            </label>
+                    <input class="auth_input" name="password" type="password"  required autocomplete="password" placeholder="************">
+            </label>
+        </form>
+
+            <form class="form" action="/send" method="POST">
+                <button class="form_button form_button--primaty" type="submit">
+                    <span class="form_button form_button-text">Oтправить</span>
+                    <span class="form_button form_button-icon" aria-hidden="true">🤖</span>
+                </button>
+            </form>
+
+        <div class="authfront">
+            <h2 class="auth_title">Авторизация</h2>
+            <form>
+                <label class="auth_label" for="login">Логин:</label>
+                <input class="auth_input" type="text" id="login" name="login">
+                
+                <label class="auth_label" for="password">Пароль:</label>
+                <input class="auth_input" type="password" id="password" name="password">
+
+                <label class="form_option">
+                    <input class="form_checkbox" type="checkbox" id="agree" name="agree" value="yes">
+                    <spain class="form_option-text">Согласен с условиями
+                    </spain>
+                </label>
+                
+                <button class="auth_btn" type="submit">Войти</button>
+            </form>
+        </div>
+
+
+ 
+
+        <footer>footer </footer>
+
+        <script>
+            window.addEventListener('scroll', function() {
+                const btn = document.querySelector('.to-top');
+                btn.style.display = window.pageYOffset > 300 ? 'block' : 'none';
+            });
+            document.querySelector('.to-top').style.display = 'none';
+        </script>
+    
+    </body>
 </html>
