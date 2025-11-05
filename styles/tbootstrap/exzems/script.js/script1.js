@@ -14,5 +14,5 @@ if (isRaining) {
     console.log("Можно идти гуляфть!");
 }
 let age;
-alert(age); // dsdtltn "undefined"
+alert(age); // выведет "undefined"
 
