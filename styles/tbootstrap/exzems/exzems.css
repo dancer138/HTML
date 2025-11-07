@@ -1,8 +1,9 @@
-.menu {
+.men
+/* .menu {
     position: fixed;
     top: 0;
     width: 100%;
-    background: #333;
+    background: #ff0000;
     padding: 15px;
     z-index: 1000;
 }
@@ -14,12 +15,12 @@
     background: rgb(255, 255, 255);
     padding: 10px;
 }
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
+} */
 .DM{
     color: rgb(0, 0, 0);
     font-size: 50px;
@@ -54,4 +55,22 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+.hero-cta {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding: 60px 20px;
+    text-align: center;
+    color: white;
+}
+
+.consultation-btn {
+    padding: 10px 20px;
+    min-width: 150px;
+    font-size: 14px;
+}
+
+/* Или с фиксированной шириной */
+.consultation-btn {
+    width: 200px;
+    padding: 12px 20px;
 }
