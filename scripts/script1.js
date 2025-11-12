@@ -70,3 +70,51 @@ else{
 }
 let isOnlain = true;
 let status = isOnlain ? "A" :"B";
+for(let i = 1; i <= 5; i++) {
+    console.log("Повтор " + i);
+
+}
+for(let i = 2; i <= 10; i+=2) {
+    console.log("Повтор " + i);
+    
+}
+for(let i = 5; i <= 15; i+=1) {
+    console.log("Повтор " + i);
+    
+}
+let p =1;
+while (p <= 3){
+    console.log("Шаг" + p);
+    p++;
+}
+    
+let i =10;
+while (i <= 11){;
+    console.log("Шаг" + i);
+    i++;
+}
+
+
+    let password;
+    do {
+        password = prompt("Введите пароль:");
+    } while (password !== "1234");
+    alert ("подтверждено");
+    console.log("пароль принят!");
+
+    let fruits = ["яблоко", "бананы","груша"];
+    for (let fruit of fruits) {
+        console.log(fruit);
+    }
+    let animals = ["лиса", "влад","сокол"];
+    for (let animals of animals) {
+        console.log(animals);
+    }
+    for (let i = 1; i <= 10; i++){
+        console.log('3 x ${i} = ${3 * i}');
+    }
+    let fruitWord = "Анас";
+    let fruitWordCount = 0;
+    for(let letter of fruitWord.toLower)
+ 
+    
