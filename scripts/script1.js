@@ -85,5 +85,17 @@ while (i <= 11){;
     // let fruitWord = "Анас";
     // let fruitWordCount = 0;
     // for(let letter of fruitWord.toLower);
-    
+    function sum(a,b){
+        return a + b;
+    }
+let result = sum(35,34);
+alert( result );
+
+// let name = nikita;
+// console.log(nikita);
+function sum(a,b,c){
+    return a + b +c;
+}
+let resultat = sum(1,2,3);
+console.log (sum);
 
