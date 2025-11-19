@@ -19,16 +19,16 @@ if (isRaining) {
 }
 let temperature=25;
 if(temperature>25){
-    console.log('на улице тепло')
+    console.log('на улице тепло');
 }
 
 
 let number = 5;
 
 if(number < 0){
-    console.log('плохое число(цифра)')
+    console.log('плохое число(цифра)');
 } else {
-    console.log('хорошое число(цифра)')
+    console.log('хорошое число(цифра)');
 }
 
 
@@ -36,16 +36,16 @@ console.log('test javascript file');
 
 let temp=20;
 if(temp>=18){
-    console.log('тепло')
+    console.log('тепло');
 }
 else if(temp>=13){
-    console.log('нормально')
+    console.log('нормально');
 }
 else if(temp>=5){
-    console.log('прохладно')
+    console.log('прохладно');
 }
 else{
-    console.log('холодно')
+    console.log('холодно');
 
 }
 for(let i = 1; i <= 5; i++) {
