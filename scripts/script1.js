@@ -1,5 +1,5 @@
     let age =  "Вы принимаете файлы  cookie!";
-    alert(age); // выводит "undefined"
+    alert(age);
     let password;
     do {
         password = prompt("Введите пароль:");
